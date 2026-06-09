@@ -1,0 +1,36 @@
+.search-filter{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(221, 145, 5);
+ position: fixed;
+ z-index: 100;
+ width: 100%;
+ 
+}
+.search-input{
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+}
+.search-filter h2{
+color: white;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.product-section{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 6rem;
+  padding-left: 1rem;
+  gap: 10px;
+}
+.card-text{
+  color: grey;
+  font-size: 0.90rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
