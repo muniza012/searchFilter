@@ -5,9 +5,7 @@ fetch("https://fakestoreapi.com/products")
   .then((res) => res.json())
   .then((products) => {
     allProducts = products;
-    products.forEach((product) => {
-      productSection.innerHTML += generateCard(product);
-    });
+    productSection.innerHTML = allProducts.map(generateCard).join("");
   });
 
 function generateCard(product) {
@@ -40,7 +38,8 @@ function handleInput(e) {
     return;
   }
 
-  filteredProducts.forEach((product) => {
-    productSection.innerHTML += generateCard(product);
-  });
+  // // filteredProducts.forEach((product) => {
+  // //   productSection.innerHTML += generateCard(product);
+  // });
+  productSection.innerHTML = filteredProducts.map(generateCard).join("");
 }
